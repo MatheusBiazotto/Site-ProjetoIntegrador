@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="back-footer">
       <div class="footer-logo">
-        <img src="@/assets/img/logo.png" alt="Logo principal" />
+        <!-- <img src="@/assets/img/logo.png" alt="Logo principal" /> -->
         <span
           >aaaaa.</span
         >
