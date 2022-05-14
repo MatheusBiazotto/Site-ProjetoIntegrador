@@ -1,4 +1,4 @@
-# testando
+# Ambar Race
 
 Repositório acerca do Projeto Integrador da FATEC Arthur de Azevedo.
 
