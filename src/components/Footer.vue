@@ -2,10 +2,8 @@
   <footer class="footer">
     <div class="back-footer">
       <div class="footer-logo">
-        <!-- <img src="@/assets/img/logo.png" alt="Logo principal" /> -->
-        <span
-          >aaaaa.</span
-        >
+        <img src="@/assets/img/ambar-logo.svg" alt="Logo principal" width="100"/>
+        <q>Descubra novos horizontes.</q>
       </div>
       <div class="footer-links">
         <h4>Acesso rápido</h4>
@@ -34,19 +32,23 @@ export default {
 
 <style>
 .footer {
-  background-color: #cccccc;
-  padding: 2%;
+  background-color: white;
 }
 
 .back-footer {
   display: grid;
   grid-template-columns: 34% 33% 33%;
   grid-template-rows: 100%;
+  padding: 2%;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .footer-logo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-links {
@@ -79,6 +81,9 @@ export default {
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
+  background-color: black;
+  color: white;
+  padding: 1%;
 }
 
 @media screen and (max-width: 767px) {

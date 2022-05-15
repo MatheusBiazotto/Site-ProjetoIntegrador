@@ -9,8 +9,8 @@
       <div></div>
       <div class="apresentation">
         <div>
-          <h1>{{ title }}</h1>
-          <span>{{ description[0] }}</span>
+          <h1>{{ raceEdition }}º Corrida de Rolimã na FATEC</h1>
+          <p>Corrida anual recorrente, onde os karts descem uma ladeira para descobrir qual deles é o melhor construído! Participe desse evento e descubra se o seu kart será o mais rápido! Para mais detalhes, clique no botão abaixo.</p>
           <button class="bt-about">Saiba mais</button>
         </div>
       </div>
@@ -21,28 +21,28 @@
 <script>
 export default {
   name: "HeaderVue",
-  data() {
-    return {
-      description: [
-        "Corrida anual recorrente, onde os karts descem uma ladeira para descobrir qual deles é o melhor construído! Participe desse evento e descubra se o seu kart será o mais rápido! Para mais detalhes, clique no botão abaixo.",
-      ],
-      title: "10° Corrida de Rolimã na FATEC",
-    };
-  },
   methods: {
     scrollDownload() {
       const divDownload = document.getElementById("download");
       divDownload.scrollIntoView({ behavior: "smooth" });
     },
   },
+  computed:{
+    raceEdition(){
+      //2022 é ano que foi desenvolvido este componente
+      //Somamos 7 já que a edição do ano de 2022 é a sétima
+      //Dessa forma, automatizamos a contagem de edição
+      return 2022 - new Date().getFullYear() + 7
+    }
+  }
 };
 </script>
 
 <style>
 .header {
-  background: url("@/assets/img/header-kart.jpg");
+  background: linear-gradient(#00000080, rgba(0, 0, 0, 0.2)),url("@/assets/img/img01.png");
   padding-bottom: 3%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -84,7 +84,7 @@ export default {
   font-weight: 700;
 }
 
-.apresentation > div > span {
+.apresentation > div > p {
   font-size: 18px;
   margin-top: 20px;
   color: #ffffff;
@@ -139,7 +139,7 @@ export default {
     margin-right: 5%;
   }
 
-  .apresentation > div > span {
+  .apresentation > div > p {
     font-size: 1rem;
     text-align: justify;
     margin-left: 5%;

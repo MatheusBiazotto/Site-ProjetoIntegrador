@@ -2,13 +2,12 @@
   "name": "testando",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview --port 5050",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite --host",
+    "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "dayjs": "^1.11.0",
     "package.json": "^2.0.1",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"

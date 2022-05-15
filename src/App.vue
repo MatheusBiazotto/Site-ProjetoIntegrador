@@ -7,32 +7,19 @@
 
 import Footer from "@/components/Footer.vue";
 
-
 export default {
   components: {
     Footer,
-  },
-  // methods: {
-  //   MenuOrHeader() {
-  //     if (location.pathname == "/") {
-  //       return <Header />;
-  //     } else {
-  //       return <MainMenu />;
-  //     }
-  //   },
-  // },
-  // mounted() {
-  //   this.MenuOrHeader();
-  // },
+  }
 };
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -54,5 +41,25 @@ html {
 
 img {
   max-width: 100%;
+}
+
+.shadow{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>
