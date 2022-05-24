@@ -122,7 +122,7 @@ export default {
         var _dia = _hora * 24;
 
         var atual = new Date();
-        var fim = new Date("05/21/2022 10:00:00");
+        var fim = new Date("05/21/2023 10:00:00");
 
         var diferenca = fim - atual;
 
